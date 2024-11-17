@@ -1,3 +1,4 @@
+console.log('zenon.js');
 module.exports = {
     rules: {
         'no-param-reassign': ['off'],
