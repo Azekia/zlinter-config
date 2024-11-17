@@ -61,6 +61,11 @@ El fichero `eslint.config.js` vamos a configurar las opciones de ESLint.
 module.exports = require('zlinter-config');
 ```
 
+```javascript
+import zl from 'zlinter-config';
+export default zl;
+```
+
 ### `npm install & reboot VSCode`
 Para que funcione correctamente el prettier/linter, depues de realizar estas configuraciones es necesario que hagas un `npm install` y reiniciar VSCode.
 
