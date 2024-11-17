@@ -18,7 +18,9 @@ const eslintConfig = [
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
-      globals: { ...globals.browser, ...globals.node, ...globals.jquery },
+      globals: {
+        ...globals.browser, ...globals.node, ...globals.jquery, console: 'readonly',
+      },
     },
   },
 ];
