@@ -1,7 +1,7 @@
 module.exports = {
     /*env: {
       es6: true
-    },*/
+    },
     parserOptions: {
       ecmaVersion: 6,
       sourceType: 'module',
@@ -10,7 +10,7 @@ module.exports = {
         objectLiteralDuplicateProperties: false
       }
     },
-  
+    */
     rules: {
       // enforces no braces where they can be omitted
       // https://eslint.org/docs/rules/arrow-body-style
