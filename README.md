@@ -58,55 +58,13 @@ Por ejemplo, para el código javascript **no usaremos** Pettier, sino ESLint.
 El fichero `eslint.config.js` vamos a configurar las opciones de ESLint.
 
 
-```json
-{
-  "extends": ["airbnb-base"],
-  "env": {
-    "es2021": true,
-    "browser": true,
-    "node": true,
-    "mocha": true
-  },
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "globals": {
-    "msal": true,
-    "google": true
-  },
-  "rules": {
-    "no-param-reassign": ["off"],
-    "linebreak-style": ["off", "unix"],
-    "import/extensions": ["error", "always", { "ignorePackages": true }],
-    "import/no-absolute-path": ["error"],
-    "no-console": ["warn", { "allow": ["log", "warn", "error"] }],
-    "no-plusplus": "off",
-    "class-methods-use-this": ["off"],
-    "max-len": ["error", { "code": 136, "tabWidth": 2, "ignoreTrailingComments": true }],
-    "prefer-destructuring": ["off"],
-    "lines-between-class-members": [
-      "warn",
-      {
-        "enforce": [
-          { "blankLine": "always", "prev": "method", "next": "*" }
-        ]
-      }
-    ]
-  }
-}
+```javascript
+module exports = 
 ```
 
 ### `npm install & reboot VSCode`
 Para que funcione correctamente el prettier/linter, depues de realizar estas configuraciones es necesario que hagas un `npm install` y reiniciar VSCode.
 
-
-### `npx prettier --write .`
-Para reformatear todos los archivos del proyecto podemos ejecutar el siguiente comando, pero ten en cuenta que puede afectar a archivos de un modo no esperado (css, etc)
-
-```
-npx prettier --write .
-```
 
 
 
