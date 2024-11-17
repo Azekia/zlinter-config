@@ -14,8 +14,6 @@
     "author": "Antonio Begines Cerrada <abegines@azekia.com>",
     "devDependencies": {
         "confusing-browser-globals": "^1.0.11",
-        "object.assign": "^4.1.5",
-        "object.entries": "^1.1.8",
         "semver": "^7.6.3"
     }
 }
