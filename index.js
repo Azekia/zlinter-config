@@ -29,6 +29,7 @@ const eslintConfig =
   require('./rules/es6.js'),
   require('./rules/imports.js'),
   require('./rules/strict.js'),
+  require('./rules/zenon.js'),
 ];
 
 module.exports = eslintConfig;
