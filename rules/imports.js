@@ -1,3 +1,5 @@
+const importplugin = require('eslint-plugin-import');
+
 module.exports = {
     /*env: {
       es6: true
@@ -12,6 +14,10 @@ module.exports = {
     ],
     */
   
+    plugins: {
+      import: importplugin
+    },
+    
     settings: {
       'import/resolver': {
         node: {
