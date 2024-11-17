@@ -1,4 +1,4 @@
-# zprettier-config
+# zlinter-config
 our **shared prettier linter config** for js/html/css development
 
 ---
