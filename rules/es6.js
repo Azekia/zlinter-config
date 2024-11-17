@@ -1,7 +1,7 @@
 module.exports = {
-    env: {
+    /*env: {
       es6: true
-    },
+    },*/
     parserOptions: {
       ecmaVersion: 6,
       sourceType: 'module',

@@ -1,7 +1,7 @@
 module.exports = {
-    env: {
+    /*env: {
       node: true
-    },
+    },*/
   
     rules: {
       // enforce return after a callback
