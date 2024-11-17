@@ -57,9 +57,8 @@ Por ejemplo, para el código javascript **no usaremos** Pettier, sino ESLint.
 ### `eslint.config.js`
 El fichero `eslint.config.js` vamos a configurar las opciones de ESLint.
 
-
 ```javascript
-module exports = 
+module.exports = require('zlinter-config');
 ```
 
 ### `npm install & reboot VSCode`
