@@ -54,8 +54,8 @@ Por ejemplo, para el código javascript **no usaremos** Pettier, sino ESLint.
 }
 ```
 
-### `.eslintrc.json`
-El fichero `.eslintrc.json` vamos a configurar las opciones de ESLint.
+### `eslint.config.js`
+El fichero `eslint.config.js` vamos a configurar las opciones de ESLint.
 
 
 ```json
