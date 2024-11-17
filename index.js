@@ -1,8 +1,9 @@
 // forked from airbnb-base, but not imposing unneeded dependencies
 // added some custom rules and globals
-console.log('Configuring rules from zlinter-config/index.js');
-
+/* eslint-disable global-require */
 const globals = require('globals');
+
+console.log('Configuring rules from zlinter-config/index.js');
 
 const eslintConfig = [
   require('./rules/best-practices.js'),
@@ -19,25 +20,19 @@ const eslintConfig = [
       ecmaVersion: 2022,
       sourceType: 'module',
       globals: {
-        ...globals.browser, ...globals.node, ...globals.jquery, console: 'readonly',
+        ...globals.browser,
+        ...globals.node,
+        ...globals.jquery,
+        console: 'readonly',
+        describe: 'readonly',
+        it: 'readonly',
+        before: 'readonly',
+        beforeEach: 'readonly',
+        after: 'readonly',
+        afterEach: 'readonly',
       },
     },
   },
 ];
 
 module.exports = eslintConfig;
-
-/*
-    en es6.js estaba esto...
-    env: {
-      es6: true
-    },
-    parserOptions: {
-      ecmaVersion: 6,
-      sourceType: 'module',
-      ecmaFeatures: {
-        generators: false,
-        objectLiteralDuplicateProperties: false
-      }
-    },
-    */
