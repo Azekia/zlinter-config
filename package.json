@@ -3,7 +3,7 @@
     "version": "1.0.1",
     "private": false,
     "description": "our [ES]linter config for js/mjs...",
-    "main": "index.mjs",
+    "main": "index.js",
     "scripts": {
         "test": "mocha"
     },
