@@ -1,37 +1,32 @@
 # zlinter-config
-our **shared prettier linter config** for js/html/css development
+our **shared [ES]linter config** for js/mjs/ts...
 
 ---
 ### `Extensiones necesarias`
 - ESLint `dbaeumer.vscode-eslint`
-- Prettier `esbenp.prettier-vscode` 
 
-
+### Módulos necesarios
+Importante instalar los paquetes de `ESLint` y `zlinter-config`
+```
+npm install --save-dev eslint
+npm install --save-dev github:azekia/zlinter-config
+or
+npm update zlinter-config
+```
 
 ### `package.json`
-En `package.json` debemos configurar las siguientes dependencias de desarrollo y la configuración de Prettier:
+En `package.json` quedarán configurdas configurar las siguientes dependencias de desarrollo
 
 Parece que la versión 9.x de slint rompió cosas, por lo que por el momento nos quedamos en 8.49
 
 ```json
   "devDependencies": {
-    "eslint": "^8.49.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "zprettier-config": "github:azekia/zprettier-config"
-  },
+    "eslint": "^9.15.0",
+    "zlinter-config": "github:azekia/zlinter-config"
+  }
   "eslintIgnore": [
     "dbmigrate/*"
   ],
-  "prettier": "zprettier-config"
-```
-
-Si ya lo tienes instalado como dependencia, pero deseas actualizarlo a la última versión, puedes hacer:
-```
-npm update zprettier-config  
 ```
 
 ### `.vscode/settings.json`
@@ -58,17 +53,6 @@ Por ejemplo, para el código javascript **no usaremos** Pettier, sino ESLint.
   }
 }
 ```
-
-### `.prettierignore`
-El fichero `.prettierignore` indica que tipo de archivos deben ser ignorados en todo caso por Prettier
-```
-*.ejs
-*.mjs
-*.js
-*.ts
-*.json
-```
-
 
 ### `.eslintrc.json`
 El fichero `.eslintrc.json` vamos a configurar las opciones de ESLint.
