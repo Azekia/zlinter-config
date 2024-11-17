@@ -58,10 +58,7 @@ Por ejemplo, para el código javascript **no usaremos** Pettier, sino ESLint.
 El fichero `eslint.config.js` vamos a configurar las opciones de ESLint.
 
 ```javascript
-module.exports = require('zlinter-config');
-```
-
-```javascript
+// module.exports = require('zlinter-config');
 import zl from 'zlinter-config';
 export default zl;
 ```
