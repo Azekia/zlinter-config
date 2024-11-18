@@ -17,8 +17,6 @@ npm update zlinter-config
 ### `package.json`
 En `package.json` quedarán configurdas configurar las siguientes dependencias de desarrollo
 
-Parece que la versión 9.x de slint rompió cosas, por lo que por el momento nos quedamos en 8.49
-
 ```json
   "devDependencies": {
     "eslint": "^9.15.0",
