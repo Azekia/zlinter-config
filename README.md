@@ -21,10 +21,10 @@ En `package.json` quedarán configurdas configurar las siguientes dependencias d
   "devDependencies": {
     "eslint": "^9.15.0",
     "zlinter-config": "github:azekia/zlinter-config"
-  }
+  },
   "eslintIgnore": [
     "dbmigrate/*"
-  ],
+  ]
 ```
 
 ### `.vscode/settings.json`
